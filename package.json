@@ -1,0 +1,28 @@
+{
+  "name": "webpack-tutorials",
+  "version": "1.0.0",
+  "description": "This is a tutorial on how to use webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AssouaAlbert/Mordern-Javascript-Webpack-Tutorials.git"
+  },
+  "keywords": [
+    "'webpack'",
+    "'github'",
+    "'git'",
+    "'tutorials'"
+  ],
+  "author": "Albert Eloumbat Assoua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AssouaAlbert/Mordern-Javascript-Webpack-Tutorials/issues"
+  },
+  "homepage": "https://github.com/AssouaAlbert/Mordern-Javascript-Webpack-Tutorials#readme",
+  "devDependencies": {
+    "webpack": "^4.42.0"
+  }
+}
