@@ -30,6 +30,7 @@ module.exports = {
         path: path.join(__dirname, 'dist')
     }
 }
+//__dir is a node.js function which is the current project folderand the second is the folder to save it into dist
 //Run the script using this command 
 // node_modules/.bin/webpack
 //On windows remote scripts are not given access to run therefore on the terminal typr the follwoing command
