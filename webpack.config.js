@@ -1,3 +1,25 @@
+//IMport some funstions that ezist on nodejs which is the required() function thakes and argument string 'path
+/**
+ * Every Node developer has to use a package installed via npm. These installed packages are stored in node_modules directory.
+
+In order to use them, you must require them in your JS file like
+
+const express = require ('express');
+The another important use is when you refactor your code to abstract some functionality or values.
+
+Say, you have a lot of helper functions in your app.js which you want to place in a separate file, say helperFunctions.js . require is used to import all the helper functions in your current file.
+
+The functions or values in the helperFunctions.js must be exported by using the global keyword exports.
+
+helperFunctions.js and app.js are in the same directory.
+
+helperFunctions.js contains:
+
+exports.firstHelper = () => {
+	return 'May the Force be with you!';
+}
+ 
+ */
 const path = require('path');
 
 module.exports = {
