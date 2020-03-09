@@ -39,4 +39,5 @@ module.exports = {
 /****************************************************************************************************/
 //For this part: every time we want to create a new bundle we wil have to create run the command node_modules/.bin/webpack  to solve this and let it tun automatically use the specify the build in the script object above
 //Now just type: 'npm run build' in the terminal
+//Add another project into the script and try now
 /******************************** */
