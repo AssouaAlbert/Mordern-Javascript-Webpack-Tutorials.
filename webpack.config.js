@@ -36,3 +36,7 @@ module.exports = {
 //On windows remote scripts are not given access to run therefore on the terminal typr the follwoing command
 //set-executionpolicy remotesigned
 //On unix OS just type sudo
+/****************************************************************************************************/
+//For this part: every time we want to create a new bundle we wil have to create run the command node_modules/.bin/webpack  to solve this and let it tun automatically use the specify the build in the script object above
+//Now just type: 'npm run build' in the terminal
+/******************************** */
