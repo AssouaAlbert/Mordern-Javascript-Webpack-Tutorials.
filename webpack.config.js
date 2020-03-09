@@ -42,3 +42,6 @@ module.exports = {
 //Add another project into the script and try now
 /******************************** */
 //To remove the warning type --node developement
+/**************************************************** */
+//Add watc:"webpack --watch"
+//Now run npm run watch ** watch is the name of the script
