@@ -21,7 +21,8 @@ exports.firstHelper = () => {
  
  */
 const path = require('path');
-
+//Module is an object of the ? which takes key entry and value the loacation of the main js file
+//and ouput (here object) and joins the arrat path into a string. 
 module.exports = {
     entry:'./src/index.js',
     output: {
