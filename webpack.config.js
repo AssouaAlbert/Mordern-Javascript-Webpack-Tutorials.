@@ -41,3 +41,4 @@ module.exports = {
 //Now just type: 'npm run build' in the terminal
 //Add another project into the script and try now
 /******************************** */
+//To remove the warning type --node developement
