@@ -4,8 +4,9 @@
   "description": "This is a tutorial on how to use webpack.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"webpack"
+  },//For this part: every time we want to create a new bundle we wil have to create run the command node_modules/.bin/webpack  to solve this and let it tun automatically use the specify the build in the script object above
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AssouaAlbert/Mordern-Javascript-Webpack-Tutorials.git"
