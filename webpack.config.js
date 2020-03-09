@@ -45,3 +45,10 @@ module.exports = {
 /**************************************************** */
 //Add watc:"webpack --watch"
 //Now run npm run watch ** watch is the name of the script
+//Here you will not have to reload because this watch script will listen for all the changes.
+/***************************************************************** */
+/**
+ * Adding bable and all the dependencies into the project
+ * npm install --save-dev bable-core bable-loader (Loaders manipulat inputs to give and output)
+ * 
+ */
