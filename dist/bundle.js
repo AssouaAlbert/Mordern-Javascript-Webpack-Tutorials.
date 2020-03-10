@@ -90,10 +90,11 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const cart = ['Product 1','Product 2','Product 3','Product 4','Product 5','Product 6','Product 7','Product 8','Product 9'];\r\nconsole.log('cart: ', cart);\r\n//How to create an entry point in webpack\r\n/**Type the command */\r\n//node_module/.bin/webpack index.js \r\n/**another way is to use the config json file */\r\n//Does not work with windows\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './css/stayle.css'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\r\nconst cart = ['Product 1','Product 2','Product 3','Product 4','Product 5','Product 6','Product 7','Product 8','Product 9'];\r\nconsole.log('cart: ', cart);\r\n//How to create an entry point in webpack\r\n/**Type the command */\r\n//node_module/.bin/webpack index.js \r\n/**another way is to use the config json file */\r\n//Does not work with windows\r\n//Add the commmand\r\n//set-executionpolicy remotesigned\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

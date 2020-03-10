@@ -28,6 +28,28 @@ module.exports = {
     output: {
         filename:"bundle.js",
         path: path.join(__dirname, 'dist')
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ["es2015"]
+                    }
+                }
+            },
+            {
+                test: /\.css$/,
+                use: {
+                    {loader: "css-loader"},
+                    {loader: "style-loader"}
+                    
+                }
+            }
+        ]
     }
 }
 //__dir is a node.js function which is the current project folderand the second is the folder to save it into dist
@@ -48,7 +70,7 @@ module.exports = {
 //Here you will not have to reload because this watch script will listen for all the changes.
 /***************************************************************** */
 /**
- * Adding bable and all the dependencies into the project
- * npm install --save-dev bable-core bable-loader (Loaders manipulat inputs to give and output)
+ * Adding babel and all the dependencies into the project
+ * npm install --save-dev babel-core babel-loader (Loaders manipulat inputs to give and output)
  * 
  */
