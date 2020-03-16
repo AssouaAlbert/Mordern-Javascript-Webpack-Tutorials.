@@ -73,7 +73,10 @@ module.exports = {
         }
     },
     plugins:[
-        new htmlWebpackPlugin(),//Generate the default html file
+        new htmlWebpackPlugin({
+            template: './src/template.html',//Create a template from the fle
+            title: 'From Webpack template',//Note that the title will not change because the title is alredy in the template file... Tey removing it
+        })//Generate the default html file
     ]
 }
 //__dir is a node.js function which is the current project folder and the second is the folder to save it into dist
@@ -103,3 +106,4 @@ module.exports = {
  * Now look at the dist folder,after installing and configuring the html plugin, run build will automatically create an index file (index.html)
 In this file the common.bundle and index.bundle are created.
 */
+/****Now lets configure the html file */
