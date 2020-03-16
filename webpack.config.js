@@ -83,8 +83,7 @@ module.exports = {
     devServer : {
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
-        port: 9000,
-        colors: true
+        port: 9000
     }
 }
 //__dir is a node.js function which is the current project folder and the second is the folder to save it into dist
