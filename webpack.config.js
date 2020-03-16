@@ -99,3 +99,7 @@ module.exports = {
  * npm install --save-dev babel-core babel-loader (Loaders manipulat inputs to give and output)
  * 
  */
+/****************** Html pugin configuration ********************* 
+ * Now look at the dist folder,after installing and configuring the html plugin, run build will automatically create an index file (index.html)
+In this file the common.bundle and index.bundle are created.
+*/
