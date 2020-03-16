@@ -21,6 +21,7 @@ exports.firstHelper = () => {
  
  */
 const path = require('path');
+const htmlWebpackPlugin = require('html-webpack-plugin');
 //Module is an object of the webpack which takes key entry and value the loacation of the main js file
 //and ouput (here object) and joins the arrat path into a string.
 /**
@@ -70,7 +71,10 @@ module.exports = {
                 }
             }
         }
-    }
+    },
+    plugins:[
+        new htmlWebpackPlugin(),//Generate the default html file
+    ]
 }
 //__dir is a node.js function which is the current project folder and the second is the folder to save it into dist
 //Run the script using this command 
