@@ -1,4 +1,4 @@
-//IMport some funstions that ezist on nodejs which is the required() function thakes and argument string 'path
+//IMport some funstions that exist on nodejs which is the required() function thakes and argument string 'path'
 /**
  * Every Node developer has to use a package installed via npm. These installed packages are stored in node_modules directory.
 
@@ -21,12 +21,21 @@ exports.firstHelper = () => {
  
  */
 const path = require('path');
-//Module is an object of the ? which takes key entry and value the loacation of the main js file
-//and ouput (here object) and joins the arrat path into a string. 
+//Module is an object of the webpack which takes key entry and value the loacation of the main js file
+//and ouput (here object) and joins the arrat path into a string.
+/**
+ * To add multiple entry points you will have to edit the entry key value and create an object with the [name] (any of your choice),
+ * And the location of the entry point is the value of the property
+ * The next thing is: we did here is not to create a single bundle file to use on all the pages but rather, two bundle files.
+ * The [name] is the key of each of the entry points which was specified
+ */
 module.exports = {
-    entry:'./src/index.js',
+    entry:{
+       index: './src/index.js',
+       about: './src/aboutus.js'
+    },
     output: {
-        filename:"bundle.js",
+        filename:"[name].bundle.js",
         path: path.join(__dirname, 'dist')
     },
     module: {
@@ -50,14 +59,26 @@ module.exports = {
                 use: ["style-loader","css-loader","sass-loader"]
             }
         ]
+    },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: "common",
+                    chunks: "all"
+                }
+            }
+        }
     }
 }
-//__dir is a node.js function which is the current project folderand the second is the folder to save it into dist
+//__dir is a node.js function which is the current project folder and the second is the folder to save it into dist
 //Run the script using this command 
 // node_modules/.bin/webpack
 //On windows remote scripts are not given access to run therefore on the terminal typr the follwoing command
 //set-executionpolicy remotesigned
 //On unix OS just type sudo
+//To run the code on windows run the command 'set-executionpolicy remotesigned'
 /****************************************************************************************************/
 //For this part: every time we want to create a new bundle we wil have to create run the command node_modules/.bin/webpack  to solve this and let it tun automatically use the specify the build in the script object above
 //Now just type: 'npm run build' in the terminal

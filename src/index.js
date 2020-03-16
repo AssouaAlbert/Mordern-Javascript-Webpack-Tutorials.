@@ -2,6 +2,7 @@ import '../dist/css/style.css'
 import '../dist/css/style.scss'
 const cart = ['Product 1','Product 2','Product 3','Product 4','Product 5','Product 6','Product 7','Product 8','Product 9'];
 console.log('cart: ', cart);
+console.log('Index home page');
 //How to create an entry point in webpack
 /**Type the command */
 //node_module/.bin/webpack index.js 
