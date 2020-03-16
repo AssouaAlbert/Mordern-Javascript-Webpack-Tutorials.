@@ -75,9 +75,16 @@ module.exports = {
     plugins:[
         new htmlWebpackPlugin({
             template: './src/template.html',//Create a template from the fle
-            title: 'From Webpack template',//Note that the title will not change because the title is alredy in the template file... Tey removing it
+            title: 'From Webpack template',
+            //Note that the title will not change because the title is alredy in the template file... Tey removing it
+            //To make it work add the code to the title
         })//Generate the default html file
-    ]
+    ],
+    devServer : {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 9000,
+    }
 }
 //__dir is a node.js function which is the current project folder and the second is the folder to save it into dist
 //Run the script using this command 
